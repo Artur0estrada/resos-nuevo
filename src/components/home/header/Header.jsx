@@ -17,7 +17,7 @@ const Header = () => {
       <header className='header'>
         <div className='container flex'>
           <div className='logo'>
-            <img src='/resos.png' height={50} width={70} alt='' />
+            <img src='/resos.png' height={60} width={80} alt='' />
           </div>
           <div className='nav'>
             <ul className={sidebar ? "nav-links-sidebar" : "nav-links"} onClick={() => setSidebar(false)}>
@@ -25,19 +25,13 @@ const Header = () => {
                 <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link to='/pages'>Pages</Link>
-              </li>
-              <li>
                 <Link to='/blog'>Blog</Link>
               </li>
               <li>
-                <Link to='/portfolio'>Portfolio</Link>
+                <Link to='/portfolio'>Contactenos</Link>
               </li>
               <li>
                 <Link to='/citas'>Citas</Link>
-              </li>
-              <li>
-                <Link to='/contact'>Contact</Link>
               </li>
               <li>
                 <Link to='/sesion'>Iniciar Sesion</Link>

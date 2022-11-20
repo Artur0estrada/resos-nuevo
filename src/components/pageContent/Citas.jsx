@@ -1,18 +1,29 @@
 import React from "react"
 import Citaform from "../home/formularios/Citaform";
+import Sesionform from "../home/formularios/Sesionform";
 const Citas = () => {
 
     return (
         <>
 
-            <section className='citas'>
-                <div className='right topMarign'>
-                    <h1>Agendar cita</h1>
-                        <body>
-                            <div>
-                                <Citaform />
+            <section className='citas2'>
+                <div>
+                    <div className='contenedorsesion'>
+                        <div className='bienvenida'>
+                            <h1>Eat. Shit. Die.</h1>
+                        </div>
+                        <div className='forminit'>
+                            <div className='cabeza'>
+                                <h2>Agenda tu cita</h2>
                             </div>
-                        </body>
+                            <body>
+                            <div>
+                                <Citaform/>
+                            </div>
+
+                            </body>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

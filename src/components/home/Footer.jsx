@@ -6,7 +6,7 @@ const Footer = () => {
       <footer>
         <div className='container grid1'>
           <div className='box'>
-            <img src='./assets/logo1.png' alt='' />
+            <img src='./resos.png'  height={150} width={180} alt='' />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div className='SocailIcon'>
               <i className='fab fa-facebook-f facebook'></i>
@@ -21,8 +21,6 @@ const Footer = () => {
             <ul>
               <li>Home</li>
               <li>About</li>
-              <li>Portfolio</li>
-              <li>News</li>
               <li>Contact</li>
               <li>FAQ's</li>
             </ul>
@@ -64,7 +62,7 @@ const Footer = () => {
         <div className='legal container'>
           <p>Copyright @2019. All rights reserved.</p>
           <label>
-            Design & Developed by <span>GorkCoder</span>
+            Design & Developed by <span>Margarito</span>
           </label>
         </div>
       </footer>

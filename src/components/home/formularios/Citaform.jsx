@@ -4,39 +4,41 @@ const Citaform = () =>{
 
 const { register, handleSubmit } = useForm();
 
+const onSubmit =(data) =>{
+    console.log(data)
+}
+
+
     return <div>
-        Formulario
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
             <div>
-                <label>Nombre</label>
-                    <input class = "textos" type={"text"} name={""}/>
+                    <input class = "textos" placeholder={'Nombre'} type={"text"} {...register('Nombre')}/>
 
             </div>
             <div>
-                <label>Telefono</label>
-                    <input class = "textos" type={"text"} name={""}/>
+                    <input class = "textos" type={"text"} placeholder={'Telefono'} {...register('Telefono')}/>
 
             </div>
             <div>
-                <label>Direccion</label>
-                    <input class = "textos" type={"text"} name={""}/>
+                    <input class = "textos" type={"text"}  placeholder={'Direccion'} {...register('Direccion')}/>
 
             </div>
             <div>
-                <label>Instrumento</label>
-                    <select class = "textos">
+                    <select class = "textos" placeholder={'Instrumento'} {...register('Instrumento')}>
                         <option value={"guitarra"}>Guitarra</option>
                         <option value={"bajo"}>Bajo</option>
                         <option value={"electrica"}>Guitarra Electrica</option>
                     </select>
             </div>
             <div>
-                <label>Servicio</label>
-                <select class = "textos">
+                <select class = "textos" placeholder={'Servicios'} {...register('Servicio')}>
                     <option value={"afinacion"}>afinacion</option>
                     <option value={"reparacion"}>reparacion</option>
                     <option value={"diagnostico"}>diagnostico</option>
                 </select>
+            </div>
+            <div className={'boton'}>
+                <button type={'submit'} >Enviar</button>
             </div>
 
         </form>

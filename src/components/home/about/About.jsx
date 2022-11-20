@@ -3,11 +3,11 @@ import React from "react"
 const About = () => {
   const data = [
     {
-      title: "Who I Am And What I Do",
+      title: "Quienes somos y a que nos dedicamos",
       desc1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam, repudia illum amet inventore facilis, eius libero.",
       desc2: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
       desc3: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      cover: "./assets/about.jpg",
+      cover: "./assets/guitarra1.jpg",
     },
   ]
   return (
@@ -30,7 +30,7 @@ const About = () => {
                 </div>
                 <div className='right'>
                   <div className='img'>
-                    <img src={value.cover} alt='' />
+                    <img src={value.cover} alt='' height={650} />
                   </div>
                 </div>
               </>

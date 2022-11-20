@@ -8,6 +8,7 @@ const Blog = () => {
       <section className='blog Services'>
         <div className='container topMarign'>
           <div className='heading'>
+            <h3>.</h3>
             <h3>LATEST BLOG</h3>
             <h1>Read Inspirational Story Every Week</h1>
           </div>

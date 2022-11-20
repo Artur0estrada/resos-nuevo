@@ -3,25 +3,25 @@ const Data = [
     id: 1,
     title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    cover: "./assets/work/work1.jpg",
+    cover: "./assets/work/yo.jpg",
   },
   {
     id: 2,
     title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    cover: "./assets/work/work2.jpg",
+    cover: "./assets/work/mencho.jpg",
   },
   {
     id: 3,
     title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    cover: "./assets/work/work3.jpg",
+    cover: "./assets/work/dios.jpg",
   },
   {
     id: 4,
     title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    cover: "./assets/work/work4.jpg",
+    cover: "./assets/work/yeguas.jpg",
   },
   {
     id: 5,
@@ -33,7 +33,7 @@ const Data = [
     id: 6,
     title: "Digital Marketing",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    cover: "./assets/work/work6.jpg",
+    cover: "./assets/work/amlo.jpg",
   },
 ]
 

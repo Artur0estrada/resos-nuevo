@@ -5,6 +5,8 @@ import Footer from "./components/home/Footer"
 import Header from "./components/home/header/Header"
 import HomePages from "./components/pages/HomePages"
 import Pages from "./components/pageContent/Pages"
+import Citas from "./components/pageContent/Citas";
+import Sesion from "./components/pageContent/Sesion";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Switch>
           <Route path='/' exact component={HomePages} />
           <Route path='/pages' exact component={Pages} />
+          <Route path='/citas' exact component={Citas} />
+          <Route path='/sesion' exact component={Sesion} />
         </Switch>
         <Footer />
       </Router>

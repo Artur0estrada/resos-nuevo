@@ -26,6 +26,7 @@ a {
 /*------------Globa----------*/
 /*------------header----------*/
 header {
+  background-color: #475872;
   padding: 20px 0;
 }
 header ul {
@@ -38,17 +39,19 @@ header ul li {
 header ul li a {
   font-weight: 500;
   transition: 0.5s;
+  color: white;
 }
 header ul li a:hover {
-  color: #38d16a;
+  color: black;
   font-weight: 500;
 }
 .HeaderIcon {
   margin-left: 20px;
   transition: 0.5s;
+  color: white;
 }
 .HeaderIcon:hover {
-  color: #38d16a;
+  color: black;
   font-weight: 500;
   cursor: pointer;
 }
@@ -60,7 +63,7 @@ header.active {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #475872;
   box-shadow: 0 2px 28px 0 rgb(0 0 0 / 6%);
   width: 100%;
   z-index: 10;
@@ -76,7 +79,7 @@ header.active {
   .nav-links-sidebar {
     position: absolute;
     display: block;
-    background-color: #fff;
+    background-color: gray;
     left: 50px;
     top: 75px;
     transition: 0.5s;
@@ -92,6 +95,7 @@ header.active {
   }
   header ul li {
     margin-bottom: 30px;
+    color: white;
   }
 
   .navbar-items-icon {
@@ -99,9 +103,12 @@ header.active {
     position: absolute;
     right: 30px;
     font-size: 30px;
-    color: #000;
-    border: 1px solid #000;
+    color: white;
+    border: 1px solid white;
     padding: 5px 10px;
+  }
+  .letras{
+    color: white;
   }
 }
 /*------------header----------*/
@@ -205,11 +212,12 @@ button {
 
 .primary-btn {
   padding: 15px 40px;
-  background: #38d16a;
+  background: #475872;
 }
 .primary-btn:hover {
-  background: #f54ea2;
-  box-shadow: 0 13px 27px 0 rgb(245 78 162 / 25%);
+  color: black;
+  background: white;
+  box-shadow: 0 13px 27px 0 black;
 }
 .home .right {
   margin-top: 15%;
@@ -754,4 +762,106 @@ footer .icon i {
   align-items: center;
   justify-content: center;
 }
+
+.citas{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+}
+.textos{
+  margin: auto;
+  width: 100%;
+  border: 1px solid #000;
+  margin-bottom: 25px;
+  padding: 14px 8px;
+  background: whitesmoke;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.textos:hover{
+  border-color: darkgray;
+}
+
+.contenedorsesion{
+  align-self: center;
+  margin-top: 50px;
+  width: 900px;
+  background: white;
+  background: linear-gradient(44deg,#ffffff 62%, #475872 62%);
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  padding: 50px;
+  border-radius: 3px;
+}
+.bienvenida{
+  position: relative;
+  color: whitesmoke;
+  text-align: right;
+}
+
+.bienvenida h1{
+  font-size: 50px;
+}
+
+.forminit{
+  width: 420px;
+}
+
+.cabeza h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.cabeza p{
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.forminit a{
+  color: #475872;
+  text-decoration: none;
+}
+
+.forminit a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.boton{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.boton button{
+  padding: 12px 36px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+}
+
+.boton button:hover{
+  color: black;
+  background-color: #475872;
+  opacity: 0.8;
+}
+
+.olvidar a{
+  font-size: 12px;
+  float:right;
+}
+
+.inputs{
+  margin-bottom: 35px;
+}
+
+
 /*------------ pages ----------*/

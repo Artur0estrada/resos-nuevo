@@ -22,19 +22,19 @@ const Header = () => {
           <div className='nav'>
             <ul className={sidebar ? "nav-links-sidebar" : "nav-links"} onClick={() => setSidebar(false)}>
               <li>
-                <Link to='/'>Home</Link>
+                <Link to='/'>Inicio</Link>
               </li>
               <li>
                 <Link to='/blog'>Blog</Link>
-              </li>
-              <li>
-                <Link to='/portfolio'>Contactenos</Link>
               </li>
               <li>
                 <Link to='/citas'>Citas</Link>
               </li>
               <li>
                 <Link to='/sesion'>Iniciar Sesion</Link>
+              </li>
+              <li>
+                <Link to='/sign-in'>Registrarse</Link>
               </li>
               <li className='icon'>
                 <SearchOutlinedIcon className='HeaderIcon' />

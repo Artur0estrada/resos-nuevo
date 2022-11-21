@@ -1,20 +1,20 @@
 const ServicesData = [
   {
     id: 1,
-    title: "Web Design",
-    desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+    title: "Calibración",
+    desc: "Este es nuestro servicio base, consiste en darle un mantenimiento general a tu instrumento para dejarlo en las mejores condiciones posibles.",
     cover: "./assets/services/services-1.jpg",
   },
   {
     id: 2,
-    title: "Web Development",
-    desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+    title: "Nivelación de trastes",
+    desc: "Si tu instrumento presenta areas donde las notas suenan muertas o tambien conocidos como 'trasteos' este es el servicio que necesitas.",
     cover: "./assets/services/services-2.jpg",
   },
   {
     id: 3,
-    title: "Photography",
-    desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+    title: "Electronica",
+    desc: "Los electronicos de la guitarra tienen un tiempo de vida, si tu instrumento mete ruido, falsos u otro problema relacionado.",
     cover: "./assets/services/services-3.jpg",
   },
   {

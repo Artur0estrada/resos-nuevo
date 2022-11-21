@@ -20,8 +20,9 @@ const Home = () => {
               <i className='fab fa-twitter twitter'></i>
               <i className='fab fa-youtube youtube'></i>
             </div>
-            <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button className='primary-btn'>Contactanos</button>
+            <p>Si tu instrumento presenta algun problema o simplemente te gustaría dejarlo en las mejores condiciones posibles
+              tralo con nosotros y con gusto te ayudaremos a darle nueva vida a tu instrumento!</p>
+            <button className='primary-btn'>Agenda una cita!</button>
           </div>
         </div>
       </section>

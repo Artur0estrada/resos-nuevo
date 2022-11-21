@@ -16,9 +16,6 @@ const HomePages = () => {
       <Branding />
       <About />
       <Services />
-      <Wrapper />
-      <Skill />
-      <WrapperOne />
       <Work />
       <Blog />
     </>

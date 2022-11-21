@@ -4,18 +4,18 @@ const Branding = () => {
   const data = [
     {
       id: "01",
-      heading: "Digital Branding",
-      desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+      heading: "Prevención",
+      desc: "Si tu instrumento aun no presenta problemas no esperes a que lo haga, traelo por un servicio para prevenir cualquier problema antes de que suceda.",
     },
     {
       id: "02",
-      heading: "Team Management",
-      desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+      heading: "Calibración",
+      desc: "Si tu instrumento ya comienza a mostrar problemas leves o moderados una calibración dejará tu instrumento de nuevo en forma y listo para tocar.",
     },
     {
       id: "03",
-      heading: "Creative Mind",
-      desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+      heading: "Reparación",
+      desc: "Si tu instrumento ya presenta un daño considerable contactanos para revisar el caso y ver que opciones podemos ofrecerte.",
     },
   ]
   return (

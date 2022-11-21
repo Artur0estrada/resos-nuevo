@@ -9,7 +9,7 @@ const Work = () => {
       <section className='work'>
         <div className='heading'>
           <h3>Mis trabajos</h3>
-          <h1>Some Of My Competed Projects</h1>
+          <h1>Estos son algunos de los trabajos que hemos realizado en el taller</h1>
         </div>
 
         <div className='content'>

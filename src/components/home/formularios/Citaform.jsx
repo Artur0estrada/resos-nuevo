@@ -25,16 +25,23 @@ const onSubmit =(data) =>{
             </div>
             <div>
                     <select class = "textos" placeholder={'Instrumento'} {...register('Instrumento')}>
-                        <option value={"guitarra"}>Guitarra</option>
-                        <option value={"bajo"}>Bajo</option>
-                        <option value={"electrica"}>Guitarra Electrica</option>
+                        <option value={"Guitarra Acústica/Electroacustica"}>Guitarra acústica o electroacustica</option>
+                        <option value={"Bajo Eléctrico 4 cuerdas"}>Bajo de 4 cuerdas</option>
+                        <option value={"Bajo Eléctrico 5 cuerdas"}>Bajo de 5 cuerdas</option>
+                        <option value={"Bajo Eléctrico 6 cuerdas"}>Bajo de 6 cuerdas</option>
+                        <option value={"Guitarra electrica"}>Guitarra Electrica</option>
+                        <option value={"Guitarra electrica Floyd Rose"}>Guitarra Electrica Floyd Rose</option>
+                        <option value={"Guitarra de 12 cuerdas"}>Guitarra de 12 cuerdas</option>
+                        <option value={"Bajo Quinto"}>Bajo Quinto</option>
+                        <option value={"Bajo sexto"}>Bajo Sexto</option>
                     </select>
             </div>
             <div>
                 <select class = "textos" placeholder={'Servicios'} {...register('Servicio')}>
-                    <option value={"afinacion"}>afinacion</option>
-                    <option value={"reparacion"}>reparacion</option>
-                    <option value={"diagnostico"}>diagnostico</option>
+                    <option value={"Calibración"}>Calibración</option>
+                    <option value={"Reparacion"}>Reparacion</option>
+                    <option value={"Electrónica"}>Electrónica</option>
+                    <option value={"Nivelación de trastes"}>Nivelación de trastes</option>
                 </select>
             </div>
             <div className={'boton'}>

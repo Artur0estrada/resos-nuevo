@@ -7,6 +7,7 @@ import HomePages from "./components/pages/HomePages"
 import Pages from "./components/pageContent/Pages"
 import Citas from "./components/pageContent/Citas";
 import Sesion from "./components/pageContent/Sesion";
+import Register from "./components/pageContent/Register";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/pages' exact component={Pages} />
           <Route path='/citas' exact component={Citas} />
           <Route path='/sesion' exact component={Sesion} />
+          <Route path='/register' exact component={Register} />
         </Switch>
         <Footer />
       </Router>

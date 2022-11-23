@@ -772,6 +772,15 @@ footer .icon i {
   height: 100vh;
 }
 
+.citasform{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  height: 170vh;
+}
+
 .citas2{
   margin: 0px;
   padding: 0px;

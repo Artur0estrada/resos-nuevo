@@ -34,7 +34,7 @@ const Header = () => {
                 <Link to='/sesion'>Iniciar Sesion</Link>
               </li>
               <li>
-                <Link to='/sign-in'>Registrarse</Link>
+                <Link to='/register'>Registrarse</Link>
               </li>
               <li className='icon'>
                 <SearchOutlinedIcon className='HeaderIcon' />

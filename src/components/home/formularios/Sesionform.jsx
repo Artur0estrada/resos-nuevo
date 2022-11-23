@@ -2,6 +2,9 @@ import {useForm} from "react-hook-form";
 
 const Citaform = () =>{
 
+    const[usernameReg, setUsernameReg] = useState("");
+    const[passwordReg, setPasswordReg] = useState("");
+
 const { register, handleSubmit } = useForm();
 
     return <div>

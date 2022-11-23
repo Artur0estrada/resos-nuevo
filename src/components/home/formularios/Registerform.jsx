@@ -1,5 +1,5 @@
 import {useForm} from "react-hook-form";
-import {Axios} from "axios";
+import Axios, * as others from 'axios';
 import {useState} from "react";
 
 const Registerform = () =>{
@@ -12,13 +12,13 @@ const Registerform = () =>{
             username: usernameReg,
             password: passwordReg,
         }).then((response) => {
-            console.log(response);
-        })
-    }
+            console.log("AAAA SI JALO");
+        });
+    };
 
     const { register1, handleSubmit } = useForm();
 
-    return <div>
+    return (<div>
         <form>
             <div className='inputs'>
                 <div>
@@ -26,9 +26,8 @@ const Registerform = () =>{
                         className='textos'
                         type={"text"}
                         placeholder={'Nombre de usuario'}
-                        name={""}
                         onChange={(e) => {
-                          setUsernameReg(e.target.value)
+                          setUsernameReg(e.target.value);
                         }}
                     />
                 </div>
@@ -77,9 +76,8 @@ const Registerform = () =>{
                         className='textos'
                         type={"password"}
                         placeholder={'Contraseña'}
-                        name={""}
                         onChange={(e) => {
-                            setPasswordReg(e.target.value)
+                            setPasswordReg(e.target.value);
                         }}
                     />
                 </div>
@@ -93,10 +91,11 @@ const Registerform = () =>{
                 </div>
             </div>
             <div className='boton'>
-                <button type={'submit'} onClick={registerer}>Registrate</button>
+                <button onClick={registerer}>Registrate</button>
             </div>
         </form>
     </div>
+    );
 }
 
 

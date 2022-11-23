@@ -1,9 +1,9 @@
 const express = require("express");
 const mysql = require("mysql");
-const app = express();
 const cors = require("cors");
 
 
+const app = express();
 
 app.use(express.json());
 app.use(cors());
@@ -22,7 +22,7 @@ app.post("/register", (req, res) => {
 
     db.query(
         "INSERT INTO prueba (username, contra) VALUES (?, ?)",
-        [username, contra,],
+        [username, contra],
         (err, result) => {
             console.log(err)
         });

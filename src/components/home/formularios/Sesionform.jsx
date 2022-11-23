@@ -1,4 +1,5 @@
 import {useForm} from "react-hook-form";
+import {useState} from "react";
 
 const Citaform = () =>{
 
@@ -11,10 +12,20 @@ const { register, handleSubmit } = useForm();
         <form>
             <div className='inputs'>
                 <div>
-                    <input className='textos' type={"text"} placeholder={'Usuario'} name={""}/>
+                    <input
+                        className='textos'
+                        type={"text"}
+                        placeholder={'Usuario'}
+                        name={""}
+                    />
                 </div>
                 <div>
-                    <input className='textos' type={"password"}  placeholder={'Contraseña'} name={""}/>
+                    <input
+                        className='textos'
+                        type={"password"}
+                        placeholder={'Contraseña'}
+                        name={""}
+                    />
 
                 </div>
                 <div className='olvidar'>

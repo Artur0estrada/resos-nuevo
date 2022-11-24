@@ -11,22 +11,26 @@ app.use(cors());
 const db = mysql.createConnection({
     user:"root",
     host:"localhost",
-    password:"1234",
-    database:"first_try",
+    password:"password",
+    database:"resosten_dbmaster",
 });
 
 app.post("/register", (req, res) => {
 
     const username = req.body.username
-    const contra = req.body.password
+    const nombre = req.body.nombre
+    const a_paterno = req.body.a_paterno
+    const a_materno = req.body.a_materno
+    const celular = req.body.celular
+    const email = req.body.email
+    const password = req.body.password
 
     db.query(
-        "INSERT INTO prueba (username, contra) VALUES (?, ?)",
-        [username, contra],
+        "INSERT INTO usuario (username, nombre, a_paterno, a_materno, celular, email, password) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        [username, nombre, a_paterno, a_materno, celular, email, password],
         (err, result) => {
             console.log(err)
         });
-
 })
 
 app.listen(3001,() =>{

@@ -37,6 +37,18 @@ const db = mysql.createConnection({
     database:"resosten_dbmaster",
 });
 
+app.get('/appointments', (req, res) =>{
+    var connection = mysql.createConnection(db)
+    connection.query('SELECT * FROM servicio', (err, rows) => {
+        if (err){
+            res.status(500).send(err)
+        } else {
+            res.status(200).send(rows)
+        }
+    })
+})
+
+
 app.post("/register", (req, res) => {
 
     const username = req.body.username

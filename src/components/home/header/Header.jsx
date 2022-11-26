@@ -1,10 +1,13 @@
-import React, { useState } from "react"
+import React, {useEffect, useState} from "react"
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined"
 import WorkIcon from "@mui/icons-material/Work"
 import GridViewTwoToneIcon from "@mui/icons-material/GridViewTwoTone"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
 import { Link } from "react-router-dom"
+import Axios, * as others from 'axios';
+
+
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -12,6 +15,18 @@ const Header = () => {
     const header = document.querySelector(".header")
     header.classList.toggle("active", window.scrollY > 180)
   })
+
+  Axios.defaults.withCredentials = true;
+
+  const [idtipo_usuario, setRole] = useState("");
+  useEffect(()=>{
+    Axios.get("http://localhost:3001/sesion").then((response) => {
+      if(response.data.loggedIn = true){
+        setRole(response.data.user[0].idtipo_usuario);
+      }
+    });
+  },[]);
+
   return (
     <>
       <header className='header'>
@@ -31,7 +46,15 @@ const Header = () => {
                 <Link to='/citas'>Citas</Link>
               </li>
               <li>
-                <Link to='/sesion'>Iniciar Sesion</Link>
+                {idtipo_usuario == "1" &&(
+                    <Link to='/sesion'>Cerrar Sesion</Link>
+                )}
+                {idtipo_usuario != "1" &&(
+                    <Link to='/sesion'>Iniciar Sesion</Link>
+                )}
+
+
+
               </li>
               <li>
                 <Link to='/register'>Registrarse</Link>

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Registerform from "../home/formularios/Registerform";
-const Sesion = () => {
+const Register = () => {
 
     return (
         <>
@@ -30,4 +30,4 @@ const Sesion = () => {
     )
 }
 
-export default Sesion
+export default Register

@@ -52,12 +52,11 @@ const Header = () => {
                 {idtipo_usuario != "1" &&(
                     <Link to='/sesion'>Iniciar Sesion</Link>
                 )}
-
-
-
               </li>
               <li>
-                <Link to='/register'>Registrarse</Link>
+                {idtipo_usuario != "1" &&(
+                    <Link to='/register'>Registrarse</Link>
+                )}
               </li>
               <li className='icon'>
                 <SearchOutlinedIcon className='HeaderIcon' />

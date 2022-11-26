@@ -1,4 +1,9 @@
 import {useForm } from "react-hook-form";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import {useState} from "react";
+import setHours from "date-fns/setHours";
+import setMinutes from "date-fns/setMinutes";
 
 const Citaform = () =>{
 
@@ -8,6 +13,9 @@ const onSubmit =(data) =>{
     console.log(data)
 }
 
+const [startDate, setStartDate] = useState(
+        setHours(setMinutes(new Date(), 30), 16)
+);
 const Instrumentos = watch('Instrumento');
 
     return <div>
@@ -76,6 +84,18 @@ const Instrumentos = watch('Instrumento');
                     <option value={"Nivelación de trastes"}>Nivelación de trastes</option>
                 </select>
             </div>
+            <DatePicker
+                selected={startDate}
+                onChange={(date) => setStartDate(date)}
+                showTimeSelect
+                includeTimes={[
+                    setHours(setMinutes(new Date(), 0), 17),
+                    setHours(setMinutes(new Date(), 30), 18),
+                    setHours(setMinutes(new Date(), 30), 19),
+                    setHours(setMinutes(new Date(), 30), 17),
+                ]}
+                dateFormat="MMMM d, yyyy h:mm aa"
+            />
             <div className={'boton'}>
                 <button type={'submit'} >Enviar</button>
             </div>

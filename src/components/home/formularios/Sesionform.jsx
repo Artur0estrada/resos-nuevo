@@ -37,7 +37,7 @@ const Sesionform = () =>{
 
 const { register, handleSubmit } = useForm();
 
-    return <div>
+    return (<div>
         <form>
             <div className='inputs'>
                 <div>
@@ -76,6 +76,7 @@ const { register, handleSubmit } = useForm();
         </div>
         <h1>{loginStatus}</h1>
     </div>
+    )
 }
 
 

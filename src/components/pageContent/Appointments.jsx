@@ -1,6 +1,10 @@
 import React from "react"
 import AppointmentsForm from "../home/formularios/AppointmentsForm";
-import Sesionform from "../home/formularios/Sesionform";
+
+
+
+
+
 const Appointments = () => {
 
     return (
@@ -14,11 +18,11 @@ const Appointments = () => {
                         </div>
                         <div className='forminit'>
                             <div className='cabeza'>
-                                <h2>Agenda tu cita</h2>
+                                <h2>Historial</h2>
                             </div>
                             <body>
                             <div>
-                                <AppointmentsForm/>
+                                <AppointmentsForm />
                             </div>
 
                             </body>

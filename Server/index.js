@@ -33,13 +33,12 @@ app.use(session({
 const db = mysql.createConnection({
     user:"root",
     host:"localhost",
-    password:"password",
+    password:"1234",
     database:"resosten_dbmaster",
 });
 
 app.get('/appointments', (req, res) =>{
-    var connection = mysql.createConnection(db)
-    connection.query('SELECT * FROM servicio', (err, rows) => {
+    db.query('SELECT * FROM servicio', (err, rows) => {
         if (err){
             res.status(500).send(err)
         } else {
@@ -84,7 +83,6 @@ app.get("/sesion", (req, res)=>{
 app.post('/sesion', (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
-
     db.query(
         "SELECT * FROM usuario WHERE username = ?",
         [username],
@@ -105,8 +103,7 @@ app.post('/sesion', (req, res) => {
                 } else {
                     res.send({message: "User doesn't exist"});
                 }
-        }
-    )
+        });
 });
 
 

@@ -33,7 +33,7 @@ app.use(session({
 const db = mysql.createConnection({
     user:"root",
     host:"localhost",
-    password:"1234",
+    password:"password",
     database:"resosten_dbmaster",
 });
 
@@ -109,6 +109,17 @@ app.post('/sesion', (req, res) => {
     )
 });
 
+
+app.get('/appointments', (req, res) =>{
+    var connection = mysql.createConnection(db)
+    connection.query('SELECT * FROM servicio', (err, rows) => {
+        if (err){
+            res.status(500).send(err)
+        } else {
+            res.status(200).send(rows)
+        }
+    })
+})
 
 app.listen(3001,() =>{
     console.log("running server");

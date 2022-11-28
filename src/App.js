@@ -8,6 +8,7 @@ import Pages from "./components/pageContent/Pages"
 import Citas from "./components/pageContent/Citas";
 import Sesion from "./components/pageContent/Sesion";
 import Register from "./components/pageContent/Register";
+import Appointments from "./components/pageContent/Appointments";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/citas' exact component={Citas} />
           <Route path='/sesion' exact component={Sesion} />
           <Route path='/register' exact component={Register} />
+          <Route path={'/appointments'} exact component={Appointments} />
         </Switch>
         <Footer />
       </Router>

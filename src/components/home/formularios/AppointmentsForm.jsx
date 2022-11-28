@@ -5,7 +5,7 @@ import {IconButton, TableBody} from "@mui/material";
 import {EditOutlined} from '@material-ui/icons'
 
 
-const Appointments = () => {
+const AppointmentsForm = () => {
     const [apptList, setApptList] = useState()
 
     const getAppts = async() =>{
@@ -54,4 +54,4 @@ const Appointments = () => {
     )
 }
 
-export default Appointments
+export default AppointmentsForm

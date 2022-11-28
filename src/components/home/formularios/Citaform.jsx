@@ -53,7 +53,7 @@ const Instrumentos = watch('Instrumento');
                 <div>
                     <select class={'textos'} >
                         <option value={"Puente Fijo"}>Puente Fijo</option>
-                        <option value={"Puente Tremono"}>Puente Tremono</option>
+                        <option value={"Puente Tremono"}>Puente Tremolo</option>
                         <option value={"Floyd Rose"}>Floyd Rose</option>
                     </select>
                 </div>

@@ -39,6 +39,7 @@ const Registerform = () =>{
                             onChange={(e) => {
                                 setUsernameReg(e.target.value);
                             }}
+                            required={true}
                         />
                     </div>
                     <div>
@@ -50,6 +51,7 @@ const Registerform = () =>{
                             onChange={(e) => {
                                 setNombreReg(e.target.value);
                             }}
+                            required={true}
                         />
                     </div>
                     <div>
@@ -61,6 +63,7 @@ const Registerform = () =>{
                             onChange={(e) => {
                                 setA_paternoReg(e.target.value);
                             }}
+                            required={true}
                         />
                     </div>
                     <div>
@@ -83,6 +86,7 @@ const Registerform = () =>{
                             onChange={(e) => {
                                 setCelularReg(e.target.value);
                             }}
+                            required={true}
                         />
                     </div>
                     <div>
@@ -94,6 +98,7 @@ const Registerform = () =>{
                             onChange={(e) => {
                                 setEmailReg(e.target.value);
                             }}
+                            required={true}
                         />
                     </div>
                     <div>
@@ -104,6 +109,7 @@ const Registerform = () =>{
                             onChange={(e) => {
                                 setPasswordReg(e.target.value);
                             }}
+                            required={true}
                         />
                     </div>
                     <div>
@@ -112,6 +118,7 @@ const Registerform = () =>{
                             type={"password"}
                             placeholder={'Repetir Contraseña'}
                             name={""}
+                            required={true}
                         />
                     </div>
                 </div>

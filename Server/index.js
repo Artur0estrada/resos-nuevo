@@ -33,7 +33,7 @@ app.use(session({
 const db = mysql.createConnection({
     user:"root",
     host:"localhost",
-    password:"1234",
+    password:"password",
     database:"resosten_dbmaster",
 });
 
@@ -47,6 +47,23 @@ app.get('/appointments', (req, res) =>{
     })
 })
 
+
+app.post("/citas", (req, res) => {
+
+    const userid = req.body.userid
+    const nombre_ct = req.body.nombre_ct
+    const celular_ct = req.body.celular_ct
+    const tipo_instrumento = req.body.tipo_instrumento
+    const tipo_servicio = req.body.tipo_servicio
+    const fecha = req.body.fecha
+
+    db.query(
+        "INSERT INTO ordenes (id_usuario, nombre, celular, datetime_entrada, idtipo_instrumento, tipo_servicio) VALUES (?, ?, ?, ?, ?, ?)",
+        [userid, nombre_ct, celular_ct, fecha, tipo_instrumento, tipo_servicio],
+        (err, result) => {
+            console.log(JSON.stringify(err));
+        });
+});
 
 app.post("/register", (req, res) => {
 

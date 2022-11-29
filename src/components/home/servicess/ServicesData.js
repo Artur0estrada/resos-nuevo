@@ -19,20 +19,8 @@ const ServicesData = [
   },
   {
     id: 4,
-    title: "Live Support",
-    desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-    cover: "./assets/services/services-4.jpg",
-  },
-  {
-    id: 5,
-    title: "Content Writing",
-    desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-    cover: "./assets/services/services-5.jpg",
-  },
-  {
-    id: 6,
-    title: "Timely Deliverables",
-    desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+    title: "Reparación",
+    desc: "Si la reparación que necesitas no entra en las categorías anteriores, será necesario traer para valoración",
     cover: "./assets/services/services-6.jpg",
   },
 ]

@@ -37,7 +37,7 @@ app.use(session({
 const db = mysql.createConnection({
     user:"root",
     host:"localhost",
-    password:"password",
+    password:"1234",
     database:"resosten_dbmaster",
 });
 
@@ -71,7 +71,7 @@ app.post("/citas", (req, res) => {
 
 app.get('/orders', (req, res) =>{
 
-    db.query('SELECT * FROM ordenes WHERE id_usuario = 2;', (err, rows) => {
+    db.query('SELECT * FROM ordenes WHERE id_usuario = 1;', (err, rows) => {
         if (err){
             res.status(500).send(err)
         } else {

@@ -69,11 +69,11 @@ const { register, handleSubmit } = useForm();
                 </span>
                 </div>
             </div>
-
+            <div className='boton'>
+                <button onClick={login}>Iniciar Sesion</button>
+            </div>
         </form>
-        <div className='boton'>
-            <button onClick={login}>Iniciar Sesion</button>
-        </div>
+
     </div>
     )
 }

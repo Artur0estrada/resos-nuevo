@@ -74,7 +74,6 @@ const { register, handleSubmit } = useForm();
         <div className='boton'>
             <button onClick={login}>Iniciar Sesion</button>
         </div>
-        <h1>{loginStatus}</h1>
     </div>
     )
 }

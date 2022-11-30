@@ -9,6 +9,7 @@ import Citas from "./components/pageContent/Citas";
 import Sesion from "./components/pageContent/Sesion";
 import Register from "./components/pageContent/Register";
 import Appointments from "./components/pageContent/Appointments";
+import Orders from "./components/pageContent/Orders";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/sesion' exact component={Sesion} />
           <Route path='/register' exact component={Register} />
           <Route path='/appointments' exact component={Appointments} />
+          <Route path='/orders' exact component={Orders} />
         </Switch>
         <Footer />
       </Router>

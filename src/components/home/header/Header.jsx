@@ -18,14 +18,31 @@ const Header = () => {
 
   Axios.defaults.withCredentials = true;
 
-  const [idtipo_usuario, setRole] = useState("");
+
+  const [idtipo_usuario, setRole] = useState("2");
+  const [userid, setUserid] = useState("");
+  const [nombre, setNombre] = useState("");
+
+  const cerrar_sesion = event => {
+    console.log('Link clicked');
+    setRole("2");
+    setUserid("");
+    setNombre("");
+
+    // 👇️ refers to the link element
+    console.log(event.currentTarget);
+  };
+
   useEffect(()=>{
     Axios.get("http://localhost:3001/sesion").then((response) => {
       if(response.data.loggedIn = true){
         setRole(response.data.user[0].idtipo_usuario);
+        setUserid(response.data.user[0].userid);
+        setNombre(response.data.user[0].nombre);
       }
     });
   },[]);
+
 
   return (
     <>
@@ -40,21 +57,29 @@ const Header = () => {
                 <Link to='/'>Inicio</Link>
               </li>
               <li>
-                <Link to='/blog'>Blog</Link>
+                <Link to='/citas'>Agendar cita</Link>
               </li>
               <li>
-                <Link to='/citas'>Citas</Link>
-              </li>
-              <li>
-                {idtipo_usuario == "1" &&(
-                    <Link to='/sesion'>Cerrar Sesion</Link>
+                {idtipo_usuario == "0" &&(
+                    <Link to='/appointments'>{nombre}</Link>
                 )}
-                {idtipo_usuario != "1" &&(
+                {idtipo_usuario == "1" &&(
+                    <Link to='/orders'>{nombre}</Link>
+                )}
+              </li>
+              <li>
+                {idtipo_usuario == "0" &&(
+                    <Link to='/' onClick={cerrar_sesion}>Cerrar Sesion</Link>
+                )}
+                {idtipo_usuario == "1" &&(
+                    <Link to='/' onClick={cerrar_sesion}>Cerrar Sesion</Link>
+                )}
+                {idtipo_usuario == "2" &&(
                     <Link to='/sesion'>Iniciar Sesion</Link>
                 )}
               </li>
               <li>
-                {idtipo_usuario != "1" &&(
+                {idtipo_usuario == "2" &&(
                     <Link to='/register'>Registrarse</Link>
                 )}
               </li>

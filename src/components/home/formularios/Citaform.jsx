@@ -27,8 +27,8 @@ const Citaform = () =>{
             userid: user_idReg,
             nombre_ct: nombreReg,
             celular_ct: celularReg,
-            tipo_instrumento: tipo_instrumentoReg,
-            tipo_servicio: tipo_servicioReg,
+            tipo_instrumento: Tipo_Instrumentos,
+            tipo_servicio: Servicios,
             fecha: startDate,
         }).then((response) => {
             console.log("AAAA SI JALO");
@@ -47,6 +47,8 @@ const [startDate, setStartDate] = useState(
         setHours(setMinutes(new Date(), 30), 16)
 );
 const Instrumentos = watch('Instrumento');
+const Tipo_Instrumentos = watch('Tipo_instrumento');
+const Servicios = watch('Servicio');
 
     return <div>
         <form>
@@ -77,11 +79,7 @@ const Instrumentos = watch('Instrumento');
             <div>
                 <select
                     class={'textos'}
-                    name={'Instrumentos'}
-                    value={tipo_instrumentoReg}
-                    onChange={(e) => {
-                        setTipo_instrumentoReg(e.target.value);
-                    }}
+                    name={'Instrumento'}
                     {...register('Instrumento')}
                     required={true}>
                     <option value={"Bajo Eléctrico"}>Bajo Eléctrico</option>
@@ -92,49 +90,54 @@ const Instrumentos = watch('Instrumento');
             </div>
             {Instrumentos === 'Bajo Eléctrico' && (
                 <div>
-                    <select class={'textos'} >
-                        <option value={"1"}>Bajo de 4 cuerdas</option>
-                        <option value={"2"}>Bajo de 5 cuerdas</option>
-                        <option value={"3"}>Bajo de 6 cuerdas</option>
+                    <select class={'textos'}
+                            name={'Tipo_instrumento'}
+                            {...register('Tipo_instrumento')}>
+                        <option value={1}>Bajo de 4 cuerdas</option>
+                        <option value={2}>Bajo de 5 cuerdas</option>
+                        <option value={3}>Bajo de 6 cuerdas</option>
                     </select>
                 </div>
             )}
             {Instrumentos === 'Guitarra Electrica' && (
                 <div>
-                    <select class={'textos'} >
-                        <option value={"4"}>Puente Fijo</option>
-                        <option value={"5"}>Puente Tremolo</option>
-                        <option value={"6"}>Floyd Rose</option>
+                    <select class={'textos'}
+                        name={'Tipo_instrumento'}
+                        {...register('Tipo_instrumento')}>
+                        <option value={4}>Puente Fijo</option>
+                        <option value={5}>Puente Tremolo</option>
+                        <option value={6}>Floyd Rose</option>
                     </select>
                 </div>
             )}
             {Instrumentos === 'Guitarra Acustica/Electroacustica' && (
                 <div>
-                    <select class={'textos'} >
-                        <option value={"7"}>Acustica</option>
-                        <option value={"8"}>Electroacustica</option>
-                        <option value={"9"}>Clasica</option>
+                    <select class={'textos'}
+                            name={'Tipo_instrumento'}
+                            {...register('Tipo_instrumento')}>
+                        <option value={7}>Acustica</option>
+                        <option value={8}>Electroacustica</option>
+                        <option value={9}>Clasica</option>
                     </select>
                 </div>
             )}
             {Instrumentos === 'Instrumento Regional' && (
                 <div>
-                    <select class={'textos'} >
-                        <option value={"10"}>Guitarra de 12 cuerdas</option>
-                        <option value={"11"}>Bajo Quinto</option>
-                        <option value={"12"}>Bajo Sexto</option>
+                    <select class={'textos'}
+                            name={'Tipo_instrumento'}
+                            {...register('Tipo_instrumento')}>
+                        <option value={10}>Guitarra de 12 cuerdas</option>
+                        <option value={11}>Bajo Quinto</option>
+                        <option value={12}>Bajo Sexto</option>
                     </select>
                 </div>
             )}
             <div>
                 <select
                     class = "textos"
-                    value={tipo_servicioReg}
-                    placeholder={'Servicios'}
-                    onChange={(e) => {
-                        setTipo_servicioReg(e.target.value);
-                    }}
-                    {...register('Servicio')}>
+                    name={'Servicio'}
+                    {...register('Servicio')}
+                    placeholder={'Servicios'}>
                     <option value={"Calibracion"}>Calibración</option>
                     <option value={"Reparacion"}>Reparacion</option>
                     <option value={"Electronica"}>Electrónica</option>

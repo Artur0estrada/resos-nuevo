@@ -7,6 +7,8 @@ const saltRounds = 10;
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
+const {useEffect, useState} = require("react");
+const Axios = require("axios");
 
 const app = express();
 
@@ -28,6 +30,8 @@ app.use(session({
         expires: 60 * 60 * 24,
     },
 }));
+
+
 
 
 const db = mysql.createConnection({
@@ -64,6 +68,17 @@ app.post("/citas", (req, res) => {
             console.log(JSON.stringify(err));
         });
 });
+
+app.get('/orders', (req, res) =>{
+
+    db.query('SELECT * FROM ordenes WHERE id_usuario = 2;', (err, rows) => {
+        if (err){
+            res.status(500).send(err)
+        } else {
+            res.status(200).send(rows)
+        }
+    })
+})
 
 app.post("/register", (req, res) => {
 

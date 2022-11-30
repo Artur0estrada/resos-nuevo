@@ -1,11 +1,11 @@
 import React from "react"
-import AppointmentsForm from "../home/formularios/AppointmentsForm";
+import OrdersForm from "../home/formularios/OrdersForm";
 
 
 
 
 
-const Appointments = () => {
+const Orders = () => {
 
     return (
         <>
@@ -14,15 +14,15 @@ const Appointments = () => {
                 <div>
                     <div className='contenedorsesion'>
                         <div className='bienvenida'>
-                            <h1>D#</h1>
+                            <h1>D#.</h1>
                         </div>
                         <div className='forminit'>
                             <div className='cabeza'>
-                                <h2>Historial</h2>
+                                <h2>Historial de citas:</h2>
                             </div>
                             <body>
                             <div>
-                                <AppointmentsForm />
+                                <OrdersForm />
                             </div>
 
                             </body>
@@ -34,4 +34,4 @@ const Appointments = () => {
     )
 }
 
-export default Appointments
+export default Orders

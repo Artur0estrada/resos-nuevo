@@ -10,7 +10,7 @@ const Citas = () => {
                 <div>
                     <div className='contenedorsesion'>
                         <div className='bienvenida'>
-                            <h1>Eat. Shit. Die.</h1>
+                            <h1>Re Sostenido.</h1>
                         </div>
                         <div className='forminit'>
                             <div className='cabeza'>

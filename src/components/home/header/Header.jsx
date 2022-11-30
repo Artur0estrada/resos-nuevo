@@ -83,11 +83,6 @@ const Header = () => {
                     <Link to='/register'>Registrarse</Link>
                 )}
               </li>
-              <li className='icon'>
-                <SearchOutlinedIcon className='HeaderIcon' />
-                <WorkIcon className='HeaderIcon' />
-                <GridViewTwoToneIcon className='HeaderIcon' />
-              </li>
             </ul>
           </div>
           <button className='navbar-items-icon' onClick={() => setSidebar(!sidebar)}>
